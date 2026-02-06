@@ -1,0 +1,80 @@
+/* --- GLOBAL RESET --- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* --- BASE ELEMENT STYLES --- */
+
+body {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+a:visited {
+
+}
+
+ul {
+
+}
+
+button {
+
+}
+
+figcaption {
+
+}
+
+/* --- LAYOUT LANDMARKS --- */
+
+header {
+
+}
+
+nav {
+
+}
+
+footer {
+    
+}
+
+main {
+
+}
+
+/* --- SECTIONS / COMPONENTS --- */
+
+.logo {
+
+}
+
+.hero-text {
+
+}
+
+.sales-info {
+
+}
+
+.testimonial {
+
+}
+
+.cta {
+
+}
+
+.cta-header {
+
+}
+
