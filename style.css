@@ -7,7 +7,17 @@
 /* --- BASE ELEMENT STYLES --- */
 
 body {
+    margin: 0;
+    padding: 0;
+}
 
+h1, 
+h2, 
+p, 
+figure,
+figcaption,
+blockquote {
+    margin: 0;
 }
 
 a {
@@ -22,15 +32,7 @@ a:visited {
 
 }
 
-ul {
-
-}
-
-button {
-
-}
-
-figcaption {
+.signup-btn {
 
 }
 
@@ -40,41 +42,51 @@ header {
 
 }
 
-nav {
+.logo {
 
 }
 
-footer {
-    
+nav ul {
+    list-style: none;
+    padding: 0em;
+    margin: 0em;
 }
 
 main {
 
 }
 
-/* --- SECTIONS / COMPONENTS --- */
-
-.logo {
+footer {
 
 }
 
-.hero-text {
+.container {
 
 }
 
-.sales-info {
+/* ---------- SECTION : HERO ---------- */
+.hero-section {
 
 }
 
-.testimonial {
+
+
+/* ---------- SECTION : SALES ---------- */
+.sales-info-section {
 
 }
 
-.cta {
+
+/* ---------- SECTION : TESTIMONIAL ---------- */
+.testimonial-section {
 
 }
 
-.cta-header {
+/* ---------- SECTION : CTA ---------- */
+.cta-section {
 
 }
+
+
+
 

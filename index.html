@@ -8,75 +8,109 @@
 </head>
 <body>
     <header>
-        <p id="logo">Company Name</p>
-        <nav>
-            <ul>
-                <li>link one</li>
-                <li>link two</li>
-                <li>link three</li>
-            </ul>
-        </nav>
+        <div class="container">
+            <p class="logo"><a href="#">Company Name</a></p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">link one</a></li>
+                    <li><a href="#">link two</a></li>
+                    <li><a href="#">link three</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero-text">
-                <h1>Neque porro quisquam est</h1>
-                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                <button>Sign up</button>
-            <figure>
-                <img src="./product-photo.jpg" alt="graphs on a tablet and monitor">
-                <figcaption>
-                    <small>Credit: <a href="https://pixabay.com/users/pix1861-468748/">PIX1861</a></small>
-                </figcaption>
-            </figure>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-card">
+                    <h1>Neque porro quisquam est</h1>
+                    
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    
+                    <button class="signup-btn">Sign up</button>
+                </div>
+
+                <div class="hero-card">
+                    <figure>
+                        <img src="./product-photo.jpg" alt="graphs on a tablet and monitor">
+                        <figcaption>
+                            <small>Credit: <a href="https://pixabay.com/users/pix1861-468748/">PIX1861</a></small>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
 
-        <section class="sales-info">
-            <h2>You'll love our service</h2>
+        <section class="sales-info-section">
+            <div class="container">
+                <h2>You'll love our service</h2>
 
-            <div class="image-placeholder"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </p>
+                <div class="sales-card-container">
+                    <div class="sales-card">
 
-            <div class="image-placeholder"></div>
-            <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+                        <div class="image-placeholder">😀</div>
+                        <p>
+                            Lorem ipsum dolor sit amet. 
+                        </p>
+                    </div>
 
-            <div class="image-placeholder"></div>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+                    <div class="sales-card">
+                        <div class="image-placeholder">😃</div>
+                        <p>
+                            Ut enim ad minim veniam.
+                        </p>
+                    </div>
+
+                    <div class="sales-card">
+                        <div class="image-placeholder">😄</div>
+                        <p>
+                            Duis aute irure dolor.
+                        </p>
+                    </div>
+
+                    <div class="sales-card">
+                        <div class="image-placeholder">😁</div>
+                        <p>
+                            Excepteur sint occaecat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <figure>
+                    <blockquote>
+                        <p>Morbi pulvinar scelerisque felis, in varius lorem commodo vitae. Praesent vel massa ultricies, sollicitudin turpis sed, fermentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed nunc imperdiet, egestas risus consectetur, placerat augue.</p>
+                    </blockquote>
+
+                    <figcaption>
+                        &mdash; <span class="author">Cicero</span>, <span class="company">de Finibus Bonorum et Malorum</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 class="cta-header">Call to action! It's time!</h2>
+                    <p>Sign up for our newsletter for important updates!</p>
+                </div>
             
-            <div class="image-placeholder"></div>
-            <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>            
-        </section>
-
-        <section class="testimonial">
-            <figure>
-                <blockquote>
-                    <p>Morbi pulvinar scelerisque felis, in varius lorem commodo vitae. Praesent vel massa ultricies, sollicitudin turpis sed, fermentum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed nunc imperdiet, egestas risus consectetur, placerat augue.</p>
-                </blockquote>
-
-                <figcaption>
-                    &mdash; <span class="author">Cicero</span>, <span class="company">de Finibus Bonorum et Malorum</span>
-                </figcaption>
-            </figure>
-        </section>
-
-        <section class="cta">
-            <h2 class="cta-header">Call to action! It's time!</h2>
-            <p>Sign up for our newsletter for important updates, new demos, and more!</p>
-            <button>Sign up</button>
+                <button class="signup-btn">Sign up</button>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Copyright @ The Odin Project 2021</p>
+        <div class="container">
+            <p>Copyright @ The Odin Project 2021</p>
+        </div>
     </footer>
 </body>
 </html>
