@@ -9,15 +9,29 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 h1, 
 h2, 
+h3, 
 p, 
 figure,
 figcaption,
 blockquote {
     margin: 0;
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+h3 {
+    margin-bottom: 0.1em;
+}
+
+img {
+    display: block;
 }
 
 a {
@@ -32,59 +46,129 @@ a:visited {
 
 }
 
-.signup-btn {
+.button {
 
 }
 
 /* --- LAYOUT LANDMARKS --- */
-
-header {
-
-}
-
-.logo {
-
-}
-
 nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
     list-style: none;
     padding: 0em;
     margin: 0em;
 }
 
-main {
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em; /* Overrides .container */
+}
 
+.logo {
+    margin-right: auto;
 }
 
 footer {
-
+    margin-top: auto;
+    padding: 1em; /* Overrides .container */
 }
 
 .container {
+    padding: 4em 1em;
+    margin: 0 auto;
+    max-width: 600px;
+    align-items: stretch;
+}
+
+.flex-group-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0em;
+}
+
+.flex-group-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 3em;
+}
+
+/* ---------- SECTION : GROUP STYLES ---------- */
+.hero-section,
+.testimonial-section,
+footer {
+    
+}
+
+header,
+.sales-info-section,
+.cta-section {
 
 }
 
 /* ---------- SECTION : HERO ---------- */
-.hero-section {
 
+.hero-card {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    min-width: 0;
+    }
+
+.hero-card img {
+    height: 100%;
+    width: 100%;
 }
 
+.signup-btn {
+    margin-right: auto;
+}
 
+.hero-card figcaption {
+    
+}
 
 /* ---------- SECTION : SALES ---------- */
-.sales-info-section {
 
+.sales-card {
+    text-align: center;
+    padding: 1em 0;
 }
 
+.image-placeholder {
+    text-align: center;
+    flex: 1;
+    font-size: 3em;
+    max-width: 200px;
+    max-height: 200px;
+}
 
 /* ---------- SECTION : TESTIMONIAL ---------- */
-.testimonial-section {
 
+.testimonial-section blockquote {
+    padding: 1em 3em;
+}
+
+.testimonial-section figcaption {
+    padding-left: 3em;
 }
 
 /* ---------- SECTION : CTA ---------- */
-.cta-section {
 
+.cta-card {
+    align-items: flex-start;
+    flex:1;
+}
+
+.signup-btn {
+    height: 100%;
+    margin-top: auto;
 }
 
 
