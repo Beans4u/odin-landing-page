@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, 
@@ -22,8 +23,17 @@ blockquote {
     margin: 0;
 }
 
+h1 {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 3rem; /* Departed from style spec to keep responsive */
+}
+
 h2 {
     margin-bottom: 2em;
+    font-size: 2rem; /* Departed from style spec to keep responsive */
+    color: #1F2937;
+    font-weight: 900;
 }
 
 h3 {
@@ -35,19 +45,15 @@ img {
 }
 
 a {
-
+    text-decoration: none;
 }
 
-a:hover {
-
-}
-
-a:visited {
-
-}
-
-.button {
-
+button {
+    color: #F9FAF8;
+    font-size: 1em;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 0.6em 2.5em;
 }
 
 /* --- LAYOUT LANDMARKS --- */
@@ -66,13 +72,21 @@ header .container {
     padding: 1em; /* Overrides .container */
 }
 
+header .container a {
+    color: #F9FAF8;
+}
+
 .logo {
     margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 footer {
     margin-top: auto;
     padding: 1em; /* Overrides .container */
+    color: #F9FAF8;
+    font-size: 0.9em;
 }
 
 .container {
@@ -100,19 +114,32 @@ footer {
 }
 
 /* ---------- SECTION : GROUP STYLES ---------- */
+header,
 .hero-section,
-.testimonial-section,
 footer {
-    
+    background-color: #1F2937;
 }
 
-header,
-.sales-info-section,
-.cta-section {
+.testimonial-section {
+    background-color: #E5E7EB;
+}
 
+.cta-section .container {
+    background-color: #3882F6;
+}
+
+header a:hover, 
+.hero-section a:hover {
+    color: #3882F6;
 }
 
 /* ---------- SECTION : HERO ---------- */
+
+.hero-section,
+.hero-section a {
+    color: #F9FAF8;
+    
+}
 
 .hero-card {
     display: flex;
@@ -128,10 +155,12 @@ header,
 
 .signup-btn {
     margin-right: auto;
+    border-style: none;
 }
 
-.hero-card figcaption {
-    
+.hero-card p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 /* ---------- SECTION : SALES ---------- */
@@ -147,12 +176,17 @@ header,
     font-size: 3em;
     max-width: 200px;
     max-height: 200px;
+    border: 2.5px solid #3882F6;
+    border-radius: 12px;
 }
 
 /* ---------- SECTION : TESTIMONIAL ---------- */
 
 .testimonial-section blockquote {
     padding: 1em 3em;
+    color: #1F2937;
+    font-size: 26px; /* Departs from style spec for visual balance */
+    font-weight: 300;
 }
 
 .testimonial-section figcaption {
@@ -164,13 +198,18 @@ header,
 .cta-card {
     align-items: flex-start;
     flex:1;
+    color: #F9FAF8;
 }
 
-.signup-btn {
+.cta-section .signup-btn {
     height: 100%;
     margin-top: auto;
+    border: 2.5px solid #F9FAF8;
+
 }
 
-
-
-
+.cta-section .container {
+    border-radius: 10px;
+    margin: 3em auto 3em auto;
+    padding: 2em;
+}
